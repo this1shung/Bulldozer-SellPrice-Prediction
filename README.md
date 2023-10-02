@@ -2,6 +2,7 @@
 
 This project originated from a Kaggle competition ten years ago with the goal of predicting the sale prices of bulldozers based on historical bulldozer sale prices from previous years.
 ![image](https://github.com/this1shung/Bulldozer-SellPrice-Prediction/assets/126255184/03761807-10f3-4bda-92df-0c5cfd5f1bfe)
+
 I will summarize information about this project below:
 # Problem definition
  - This time, we will be predicting the sale price of bulldozers, which is a value that can go up or down. Therefore, this project will revolve around a regression problem, where we aim to predict a continuous numerical value (the sale price) based on various features and historical data.
@@ -17,17 +18,27 @@ I will summarize information about this project below:
        + I also encountered a significant amount of non-numeric data (data that needed to be transformed for machine learning models to understand). During this process, I converted object data types into numerical types, and I also handled missing data.
 # Features
  - There are many attributes in the dataset, and I will list 10 of them here. In the notebook , I also performed a step to find feature importance to determine which attributes have the most significant impact on the model's predictions. Here are 10 attributes from the dataset:
-        1.SalesID: Unique identifier of a particular sale of a machine at auction
-        2.MachineID: Identifier for a particular machine; machines may have multiple sales
-        3.ModelID: Identifier for a unique machine model (i.e. fiModelDesc)
-        4.Datasource: Source of the sale record; some sources are more diligent about reporting attributes of the machine than others. Note that a particular datasource may report on multiple auctioneerIDs.
-        5.auctioneerID: Identifier of a particular auctioneer, i.e. company that sold the machine at auction. Not the same as datasource.
-        6.YearMade: Year of manufacturer of the Machine
-        7.MachineHoursCurrentMeter: Current usage of the machine in hours at time of sale (saledate); null or 0 means no hours have been reported for that sale
-        8.UsageBand: Value (low, medium, high) calculated comparing this particular Machine-Sale hours to average usage for the fiBaseModel; e.g. 'Low' means this machine has less hours given it's lifespan 
-        relative to average of fiBaseModel.
-        9.Saledate: Time of sale
-        10.Saleprice: Cost of sale in USD(only appear in train set and valid set)
+
+   1.SalesID: Unique identifier of a particular sale of a machine at auction
+
+   2.MachineID: Identifier for a particular machine; machines may have multiple sales
+
+   3.ModelID: Identifier for a unique machine model (i.e. fiModelDesc)
+
+   4.Datasource: Source of the sale record; some sources are more diligent about reporting attributes of the machine than others. Note that a particular datasource may report on multiple auctioneerIDs.
+
+   5.auctioneerID: Identifier of a particular auctioneer, i.e. company that sold the machine at auction. Not the same as datasource.
+
+   6.YearMade: Year of manufacturer of the Machine
+
+   7.MachineHoursCurrentMeter: Current usage of the machine in hours at time of sale (saledate); null or 0 means no hours have been reported for that sale
+
+   8.UsageBand: Value (low, medium, high) calculated comparing this particular Machine-Sale hours to average usage for the fiBaseModel; e.g. 'Low' means this machine has less hours given it's lifespan 
+   relative to average of fiBaseModel.
+
+   9.Saledate: Time of sale
+
+   10.Saleprice: Cost of sale in USD(only appear in train set and valid set)
 # Evaluation metrics
  - The evaluation metric specified by Kaggle for the project is Root Mean Squared Log Error (RMSLE). In addition to that, i have also used the R-squared (R2) metric and some other evaluation metric.
 # Model 
@@ -41,4 +52,6 @@ I will summarize information about this project below:
   ![image](https://github.com/this1shung/Bulldozer-SellPrice-Prediction/assets/126255184/8d5cb423-3210-4704-87f1-00d9e69b5d89)
 
 Thank you for reading my project details, and if you come across any issues or errors in my project, please do inform me. It will be helpful for me. Wishing you a great day!
+
+## 📫 How to reach me: <a href="https://hungmondaypkm@gmail.com" target="blank"><img align="center" src="https://img.icons8.com/color/48/000000/gmail--v2.png" alt="hungmondaypkm@gmail.com" height="30" width="40" /></a><a href="https://www.facebook.com/profile.php?id=100009216758210" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="1" height="30" width="40" /></a><a href="https://twitter.com/gnuhmonday" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="1" height="30" width="40" /></a><a href="https://www.linkedin.com/in/quang-h%C6%B0ng-l%C3%AA-989610293/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="1" height="30" width="40" /></a>
 
