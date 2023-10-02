@@ -9,13 +9,19 @@ I will summarize information about this project below:
 # Data
  - The data for this project is provided by Kaggle : https://www.kaggle.com/competitions/bluebook-for-bulldozers/data
  - The dataset is divided into three parts:
-       + Train.csv is the training set, which contains data through the end of 2011.
-       + Valid.csv is the validation set, which contains data from January 1, 2012 - April 30, 2012 You make predictions on this set throughout the majority of the competition. Your score on this set is used to create the public leaderboard.
-       + Test.csv is the test set, which won't be released until the last week of the competition. It contains data from May 1, 2012 - November 2012. Your score on the test set determines your final rank for the competition.
+
+   + Train.csv is the training set, which contains data through the end of 2011.
+      
+   + Valid.csv is the validation set, which contains data from January 1, 2012 - April 30, 2012 You make predictions on this set throughout the majority of the competition. Your score on this set is used to create the public leaderboard.
+       
+   + Test.csv is the test set, which won't be released until the last week of the competition. It contains data from May 1, 2012 - November 2012. Your score on the test set determines your final rank for the competition.
  - In addition to being a regression problem, this project primarily focuses on the data preprocessing aspect i have performed several data preprocessing steps(across the train,valid and test data) to create a suitable dataset:
-       + When initially working with the dataset, I observed that the date values are stored as an 'object' data type instead of the 'datetime' data type. Therefore, I had to change it.
-       + A significant portion of the data was also missing
-       + I also encountered a significant amount of non-numeric data (data that needed to be transformed for machine learning models to understand). During this process, I converted object data types into numerical types, and I also handled missing data.
+
+   + When initially working with the dataset, I observed that the date values are stored as an 'object' data type instead of the 'datetime' data type. Therefore, I had to change it.
+       
+   + A significant portion of the data was also missing
+       
+   + I also encountered a significant amount of non-numeric data (data that needed to be transformed for machine learning models to understand). During this process, I converted object data types into numerical types, and I also handled missing data.
 # Features
  - There are many attributes in the dataset, and I will list 10 of them here. In the notebook , I also performed a step to find feature importance to determine which attributes have the most significant impact on the model's predictions. Here are 10 attributes from the dataset:
 
